@@ -1,0 +1,31 @@
+{
+  "name": "ProtractorAssignment",
+  "version": "1.0.0",
+  "description": "Protractor assignment for NAGP 2020",
+  "main": "index.js",
+  "scripts": {
+    "test": "Protractor config.js",
+    "start": "webdriver-manager start",
+    "update": "webdriver-manager update",
+    "all": "protractor --cucumberOpts.tags=\"@functionalTestCase\" config.js",
+    "bankManagerLogin": "protractor --cucumberOpts.tags=\"@bankManagerLogin\" config.js",
+    "customerLogin": "protractor --cucumberOpts.tags=\"@customerLogin\" config.js",
+    "generalScenario": "protractor --cucumberOpts.tags=\"@generalScenario\" config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^5.2.0",
+    "log4js-protractor-appender": "^1.1.2",
+    "protractor": "^7.0.0",
+    "protractor-cucumber-framework": "^6.2.1",
+    "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1"
+  },
+  "dependencies": {
+    "log4js": "^6.3.0",
+    "node-datetime": "^2.1.2",
+    "zip-a-folder": "0.0.12"
+  }
+}

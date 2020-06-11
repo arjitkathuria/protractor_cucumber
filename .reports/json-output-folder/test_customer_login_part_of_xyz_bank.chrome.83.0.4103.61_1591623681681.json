@@ -1,0 +1,283 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Test customer login part of XYZ bank",
+    "line": 2,
+    "id": "test-customer-login-part-of-xyz-bank",
+    "tags": [
+      {
+        "name": "@customerLogin",
+        "line": 1
+      },
+      {
+        "name": "@functionalTestCase",
+        "line": 1
+      }
+    ],
+    "uri": "features/customerLogin.feature",
+    "elements": [
+      {
+        "id": "test-customer-login-part-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
+        "keyword": "Scenario",
+        "line": 54,
+        "name": "Verify the deposit and withdrawl functionality of XYZ bank",
+        "tags": [
+          {
+            "name": "@customerLogin",
+            "line": 1
+          },
+          {
+            "name": "@functionalTestCase",
+            "line": 1
+          },
+          {
+            "name": "@depositAndWithdrawlTestCase",
+            "line": 30
+          },
+          {
+            "name": "@negative",
+            "line": 30
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "User opens the XYZ bank application",
+            "match": {
+              "location": "stepDefinations/generalTest.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4985000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "Verify user is on XYZ bank application",
+            "match": {
+              "location": "stepDefinations/generalTest.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 311000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "Check the text of 'customer login' button",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "Click on 'customer login' button",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1050000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Verify 'customer login page' open successfully",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "Verify 'text on customer login' page",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "Select 'Hermoine Granger' from the list",
+            "match": {
+              "location": "stepDefinations/customerLogin.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1035000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "Click on 'login' button",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "Verify the 'Hermoine Granger' on 'user account screen'",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "Click on 'withdrawl' button",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1043000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "Verify 'text on withdrawl' page",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "Set the '9000' text under 'withdrawl section'",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "Click on the 'withdrawl button' to add money",
+            "match": {
+              "location": "stepDefinations/customerLogin.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2078000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "Verify the 'Transaction Failed. You can not withdraw amount more than the balance.' on 'withdrawl screen error'",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:29"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:20"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "83.0.4103.61"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]
