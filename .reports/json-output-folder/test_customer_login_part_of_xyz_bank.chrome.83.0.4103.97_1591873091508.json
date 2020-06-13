@@ -2935,6 +2935,17 @@
           }
         ]
       }
-    ]
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "83.0.4103.97"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
   }
 ]

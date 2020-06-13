@@ -1,5 +1,5 @@
 @bankManagerLogin @functionalTestCase
-Feature: Test bank manager login part of XYZ bank
+Feature: Test bank manager login, adding customers, add currency to customers and removing customers of XYZ bank
 
     Background:
         Given User opens the XYZ bank application
@@ -64,5 +64,3 @@ Feature: Test bank manager login part of XYZ bank
             | 'Arjit'          |
             | 'NAGP'           |
             | 'Hymad'          |
-
-

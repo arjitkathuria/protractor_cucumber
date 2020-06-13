@@ -8,6 +8,8 @@
 
 tags: "@loginLogoutTestCase"
 
+* Added capability for parallel execution in chrome and safari 
+
 Also created different scripts under package.json for all type of test cases.
 
 * Almost each and every step defination is generic so it can used for multiple scenario.
@@ -24,7 +26,7 @@ Everything has been controlled only through commonFunctions.js
 
 * Used proper coding practice, Like using of let and camel casing
 
-* Added Negative scenario for withdrawing more money than balance
+* Added Negative scenario for withdrawing more money than balance for a customer
 
 **What all dependencies used for this task?**
 -----
@@ -37,6 +39,8 @@ Everything has been controlled only through commonFunctions.js
  * protractor-multiple-cucumber-html-reporter-plugin
  * Gherkin
  * Java Script
+ * node-datetime
+ * zip-a-folder
  
 
 **What all I have included in this project?**
