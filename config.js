@@ -27,7 +27,7 @@ exports.config = {
              }
          },
          {
-             'browserName': 'safari',
+             'browserName': 'firefox',
              'moz:firefoxOptions': {
                 'args': ['--safe-mode'],
                 //'args': [ "--headless" ]
