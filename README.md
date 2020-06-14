@@ -24,9 +24,11 @@ Everything has been controlled only through commonFunctions.js
 
 * Created seperate property file to read the general information of the test like URL of the application.
 
-* Used proper coding practice, Like using of let and camel casing
+* Used proper coding practice, Like using of let and camel casing.
 
-* Added Negative scenario for withdrawing more money than balance for a customer
+* Added Negative scenario for withdrawing more money than balance for a customer.
+
+* Used multiple cucumber html reporting fwhich support parallel execution of browser in a single report.
 
 **What all dependencies used for this task?**
 -----
@@ -88,6 +90,10 @@ npm run all: to execute all of the test
 npm run bankManagerLogin: to execute all of the test related to bank manager login
 npm run customerLogin: to execute all of the test related to customer login
 npm run generalScenario: to execute all of the general test
+npm run negative: to run negative scenario
 
 ** Can run through cmd or any editor like visual studio **
 
+# Git hub Repo Link:-
+* Git clone https://github.com/arjitkathuria/protractor_cucumber.git
+`https://github.com/arjitkathuria/protractor_cucumber.git`

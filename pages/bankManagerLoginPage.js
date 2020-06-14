@@ -20,7 +20,7 @@ let bankManagerLoginPage = function () {
         return await browser.sleep(propertyMap["mediumWait"]);
     };
 
-    //------------------------------Verify alert text and accept it----------------------------------
+    //------------------------------Verify alert text and accept it-----------------------------------
 
     this.verifyTextOnalert = async function (string) {
         const elementName = await toCamelCase(string);
@@ -42,7 +42,7 @@ let bankManagerLoginPage = function () {
         return browser.sleep(propertyMap["smallWait"]);
     };
 
-    //------------------------------Delete custmer from the list--------------------------------------
+    //------------------------------Delete customer from the list--------------------------------------
 
     this.deleteCustomer = async function (string) {
         let deleteItem = "//table[@class='table table-bordered table-striped']//td[text()='" + string + "']//parent::tr//button";

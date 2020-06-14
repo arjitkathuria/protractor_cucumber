@@ -12,7 +12,7 @@ exports.config = {
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     specs: ['./features/*.feature'],
     setPageTimeout: 100000,
-    setDefaultTimeout: 60 * 1000,
+    // setDefaultTimeout: 60 * 1000,
     capabilities: {
         browserName: 'chrome'
     },
@@ -40,7 +40,7 @@ exports.config = {
         require: ['./stepDefinations/*.js', './hooks/*.js'],
         format: 'json:.reports/results.json',
         strict: true,
-        tags: '@customerLogin'
+        tags: '@functionalTestCase'
     },
 
     beforeLaunch: function () {

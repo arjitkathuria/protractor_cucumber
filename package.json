@@ -10,7 +10,8 @@
     "all": "protractor --cucumberOpts.tags=\"@functionalTestCase\" config.js",
     "bankManagerLogin": "protractor --cucumberOpts.tags=\"@bankManagerLogin\" config.js",
     "customerLogin": "protractor --cucumberOpts.tags=\"@customerLogin\" config.js",
-    "generalScenario": "protractor --cucumberOpts.tags=\"@generalScenario\" config.js"
+    "generalScenario": "protractor --cucumberOpts.tags=\"@generalScenario\" config.js",
+    "negative": "protractor --cucumberOpts.tags=\"@negative\" config.js"
   },
   "author": "",
   "license": "ISC",

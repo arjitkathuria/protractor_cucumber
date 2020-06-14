@@ -1,9 +1,9 @@
 [
   {
     "keyword": "Feature",
-    "name": "Test customer login part of XYZ bank",
+    "name": "Test customer login, logout, deposit, deposit and negative scenario of XYZ bank",
     "line": 2,
-    "id": "test-customer-login-part-of-xyz-bank",
+    "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank",
     "tags": [
       {
         "name": "@customerLogin",
@@ -17,7 +17,7 @@
     "uri": "features/customerLogin.feature",
     "elements": [
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-login-and-logout-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-login-and-logout-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 24,
         "name": "Verify the login and logout functionality of XYZ bank",
@@ -44,8 +44,7 @@
               "location": "hooks/hooks.js:16"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -57,8 +56,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 3649000000
+              "status": "failed",
+              "duration": 8000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -67,11 +67,10 @@
             "line": 9,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 374000000
+              "status": "skipped"
             }
           },
           {
@@ -83,8 +82,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 59000000
+              "status": "skipped"
             }
           },
           {
@@ -96,8 +94,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1055000000
+              "status": "skipped"
             }
           },
           {
@@ -109,8 +106,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           },
           {
@@ -122,8 +118,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 26000000
+              "status": "skipped"
             }
           },
           {
@@ -135,8 +130,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1152000000
+              "status": "skipped"
             }
           },
           {
@@ -148,8 +142,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1261000000
+              "status": "skipped"
             }
           },
           {
@@ -161,8 +154,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 28000000
+              "status": "skipped"
             }
           },
           {
@@ -174,8 +166,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1069000000
+              "status": "skipped"
             }
           },
           {
@@ -187,8 +178,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           },
           {
@@ -200,8 +190,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1058000000
+              "status": "skipped"
             }
           },
           {
@@ -210,18 +199,17 @@
             "line": 20,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 19000000
+              "status": "skipped"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
+              "location": "hooks/hooks.js:30"
             },
             "result": {
               "status": "passed"
@@ -231,10 +219,12 @@
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:20"
+              "location": "hooks/hooks.js:21"
             },
             "result": {
-              "status": "passed"
+              "status": "failed",
+              "duration": 13000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -244,14 +234,13 @@
               "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-login-and-logout-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-login-and-logout-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 25,
         "name": "Verify the login and logout functionality of XYZ bank",
@@ -291,8 +280,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 1231000000
+              "status": "failed",
+              "duration": 8000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -301,11 +291,10 @@
             "line": 9,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 87000000
+              "status": "skipped"
             }
           },
           {
@@ -317,8 +306,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 28000000
+              "status": "skipped"
             }
           },
           {
@@ -330,8 +318,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1047000000
+              "status": "skipped"
             }
           },
           {
@@ -343,8 +330,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -356,8 +342,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 24000000
+              "status": "skipped"
             }
           },
           {
@@ -369,8 +354,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1029000000
+              "status": "skipped"
             }
           },
           {
@@ -382,8 +366,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1051000000
+              "status": "skipped"
             }
           },
           {
@@ -395,8 +378,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 29000000
+              "status": "skipped"
             }
           },
           {
@@ -408,8 +390,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1055000000
+              "status": "skipped"
             }
           },
           {
@@ -421,8 +402,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 9000000
+              "status": "skipped"
             }
           },
           {
@@ -434,8 +414,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1052000000
+              "status": "skipped"
             }
           },
           {
@@ -444,31 +423,33 @@
             "line": 20,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 1000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
+              "location": "hooks/hooks.js:21"
             },
             "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "hooks/hooks.js:20"
-            },
-            "result": {
-              "status": "passed"
+              "status": "failed",
+              "duration": 11000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -478,13 +459,14 @@
               "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-login-and-logout-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-login-and-logout-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 26,
         "name": "Verify the login and logout functionality of XYZ bank",
@@ -511,7 +493,8 @@
               "location": "hooks/hooks.js:16"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -523,8 +506,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 1100000000
+              "status": "failed",
+              "duration": 7000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -533,11 +517,10 @@
             "line": 9,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 49000000
+              "status": "skipped"
             }
           },
           {
@@ -549,8 +532,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 25000000
+              "status": "skipped"
             }
           },
           {
@@ -562,8 +544,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1057000000
+              "status": "skipped"
             }
           },
           {
@@ -575,8 +556,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           },
           {
@@ -588,8 +568,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 24000000
+              "status": "skipped"
             }
           },
           {
@@ -601,8 +580,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1029000000
+              "status": "skipped"
             }
           },
           {
@@ -614,8 +592,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1054000000
+              "status": "skipped"
             }
           },
           {
@@ -627,8 +604,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 27000000
+              "status": "skipped"
             }
           },
           {
@@ -640,8 +616,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1051000000
+              "status": "skipped"
             }
           },
           {
@@ -653,8 +628,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           },
           {
@@ -666,8 +640,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1062000000
+              "status": "skipped"
             }
           },
           {
@@ -676,32 +649,32 @@
             "line": 20,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 20000000
+              "status": "skipped"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "hooks/hooks.js:20"
+              "location": "hooks/hooks.js:30"
             },
             "result": {
               "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 21000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -718,7 +691,7 @@
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-login-and-logout-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-login-and-logout-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 27,
         "name": "Verify the login and logout functionality of XYZ bank",
@@ -758,8 +731,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 769000000
+              "status": "failed",
+              "duration": 8000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -768,11 +742,10 @@
             "line": 9,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 125000000
+              "status": "skipped"
             }
           },
           {
@@ -784,8 +757,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 20000000
+              "status": "skipped"
             }
           },
           {
@@ -797,8 +769,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1059000000
+              "status": "skipped"
             }
           },
           {
@@ -810,8 +781,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           },
           {
@@ -823,8 +793,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 20000000
+              "status": "skipped"
             }
           },
           {
@@ -836,8 +805,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1029000000
+              "status": "skipped"
             }
           },
           {
@@ -849,8 +817,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1055000000
+              "status": "skipped"
             }
           },
           {
@@ -862,8 +829,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 24000000
+              "status": "skipped"
             }
           },
           {
@@ -875,8 +841,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1069000000
+              "status": "skipped"
             }
           },
           {
@@ -888,8 +853,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 14000000
+              "status": "skipped"
             }
           },
           {
@@ -901,8 +865,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1068000000
+              "status": "skipped"
             }
           },
           {
@@ -911,31 +874,33 @@
             "line": 20,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 1000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
+              "location": "hooks/hooks.js:21"
             },
             "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "hooks/hooks.js:20"
-            },
-            "result": {
-              "status": "passed"
+              "status": "failed",
+              "duration": 10000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -945,14 +910,13 @@
               "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-login-and-logout-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-login-and-logout-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 28,
         "name": "Verify the login and logout functionality of XYZ bank",
@@ -992,8 +956,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 565000000
+              "status": "failed",
+              "duration": 10000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -1002,11 +967,10 @@
             "line": 9,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 24000000
+              "status": "skipped"
             }
           },
           {
@@ -1018,8 +982,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 24000000
+              "status": "skipped"
             }
           },
           {
@@ -1031,8 +994,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1080000000
+              "status": "skipped"
             }
           },
           {
@@ -1044,8 +1006,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 17000000
+              "status": "skipped"
             }
           },
           {
@@ -1057,8 +1018,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 31000000
+              "status": "skipped"
             }
           },
           {
@@ -1070,8 +1030,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1044000000
+              "status": "skipped"
             }
           },
           {
@@ -1083,8 +1042,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1105000000
+              "status": "skipped"
             }
           },
           {
@@ -1096,8 +1054,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 32000000
+              "status": "skipped"
             }
           },
           {
@@ -1109,8 +1066,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1068000000
+              "status": "skipped"
             }
           },
           {
@@ -1122,8 +1078,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 13000000
+              "status": "skipped"
             }
           },
           {
@@ -1135,8 +1090,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1069000000
+              "status": "skipped"
             }
           },
           {
@@ -1145,31 +1099,33 @@
             "line": 20,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:30"
             },
             "result": {
               "status": "passed",
-              "duration": 25000000
+              "duration": 1000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
+              "location": "hooks/hooks.js:21"
             },
             "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "hooks/hooks.js:20"
-            },
-            "result": {
-              "status": "passed"
+              "status": "failed",
+              "duration": 17000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -1185,7 +1141,7 @@
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 48,
         "name": "Verify the deposit and withdrawl functionality of XYZ bank",
@@ -1229,8 +1185,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 706000000
+              "status": "failed",
+              "duration": 10000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -1239,11 +1196,10 @@
             "line": 32,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 140000000
+              "status": "skipped"
             }
           },
           {
@@ -1255,8 +1211,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 33000000
+              "status": "skipped"
             }
           },
           {
@@ -1268,8 +1223,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1077000000
+              "status": "skipped"
             }
           },
           {
@@ -1281,8 +1235,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 11000000
+              "status": "skipped"
             }
           },
           {
@@ -1294,8 +1247,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 19000000
+              "status": "skipped"
             }
           },
           {
@@ -1307,8 +1259,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1031000000
+              "status": "skipped"
             }
           },
           {
@@ -1320,8 +1271,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1048000000
+              "status": "skipped"
             }
           },
           {
@@ -1333,8 +1283,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 23000000
+              "status": "skipped"
             }
           },
           {
@@ -1346,8 +1295,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1052000000
+              "status": "skipped"
             }
           },
           {
@@ -1359,8 +1307,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 26000000
+              "status": "skipped"
             }
           },
           {
@@ -1372,8 +1319,7 @@
               "location": "stepDefinations/generalStepDefinations.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 201000000
+              "status": "skipped"
             }
           },
           {
@@ -1385,8 +1331,7 @@
               "location": "stepDefinations/customerLogin.js:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 2072000000
+              "status": "skipped"
             }
           },
           {
@@ -1398,29 +1343,30 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 27000000
+              "status": "skipped"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
-            },
-            "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "hooks/hooks.js:20"
+              "location": "hooks/hooks.js:30"
             },
             "result": {
               "status": "passed",
               "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 26000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -1436,7 +1382,7 @@
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 49,
         "name": "Verify the deposit and withdrawl functionality of XYZ bank",
@@ -1467,7 +1413,8 @@
               "location": "hooks/hooks.js:16"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 5000000
             }
           },
           {
@@ -1479,8 +1426,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 688000000
+              "status": "failed",
+              "duration": 10000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -1489,11 +1437,10 @@
             "line": 32,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 446000000
+              "status": "skipped"
             }
           },
           {
@@ -1505,8 +1452,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 24000000
+              "status": "skipped"
             }
           },
           {
@@ -1518,8 +1464,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1060000000
+              "status": "skipped"
             }
           },
           {
@@ -1531,8 +1476,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -1544,8 +1488,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 29000000
+              "status": "skipped"
             }
           },
           {
@@ -1557,8 +1500,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1041000000
+              "status": "skipped"
             }
           },
           {
@@ -1570,8 +1512,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1051000000
+              "status": "skipped"
             }
           },
           {
@@ -1583,8 +1524,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 26000000
+              "status": "skipped"
             }
           },
           {
@@ -1596,8 +1536,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1047000000
+              "status": "skipped"
             }
           },
           {
@@ -1609,8 +1548,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 26000000
+              "status": "skipped"
             }
           },
           {
@@ -1622,8 +1560,7 @@
               "location": "stepDefinations/generalStepDefinations.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 67000000
+              "status": "skipped"
             }
           },
           {
@@ -1635,8 +1572,7 @@
               "location": "stepDefinations/customerLogin.js:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 2063000000
+              "status": "skipped"
             }
           },
           {
@@ -1648,28 +1584,30 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:30"
+            },
+            "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 2000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
+              "location": "hooks/hooks.js:21"
             },
             "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "hooks/hooks.js:20"
-            },
-            "result": {
-              "status": "passed"
+              "status": "failed",
+              "duration": 19000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -1679,13 +1617,14 @@
               "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 50,
         "name": "Verify the deposit and withdrawl functionality of XYZ bank",
@@ -1729,8 +1668,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 1177000000
+              "status": "failed",
+              "duration": 14000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -1739,11 +1679,10 @@
             "line": 32,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 50000000
+              "status": "skipped"
             }
           },
           {
@@ -1755,8 +1694,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 26000000
+              "status": "skipped"
             }
           },
           {
@@ -1768,8 +1706,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1067000000
+              "status": "skipped"
             }
           },
           {
@@ -1781,8 +1718,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -1794,8 +1730,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 23000000
+              "status": "skipped"
             }
           },
           {
@@ -1807,8 +1742,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1035000000
+              "status": "skipped"
             }
           },
           {
@@ -1820,8 +1754,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1051000000
+              "status": "skipped"
             }
           },
           {
@@ -1833,8 +1766,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 26000000
+              "status": "skipped"
             }
           },
           {
@@ -1846,8 +1778,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1045000000
+              "status": "skipped"
             }
           },
           {
@@ -1859,8 +1790,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 26000000
+              "status": "skipped"
             }
           },
           {
@@ -1872,8 +1802,7 @@
               "location": "stepDefinations/generalStepDefinations.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 70000000
+              "status": "skipped"
             }
           },
           {
@@ -1885,8 +1814,7 @@
               "location": "stepDefinations/customerLogin.js:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 2071000000
+              "status": "skipped"
             }
           },
           {
@@ -1898,25 +1826,14 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 26000000
+              "status": "skipped"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
-            },
-            "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "hooks/hooks.js:20"
+              "location": "hooks/hooks.js:30"
             },
             "result": {
               "status": "passed",
@@ -1927,16 +1844,29 @@
             "keyword": "After",
             "hidden": true,
             "match": {
+              "location": "hooks/hooks.js:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 44000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
               "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 51,
         "name": "Verify the deposit and withdrawl functionality of XYZ bank",
@@ -1967,7 +1897,8 @@
               "location": "hooks/hooks.js:16"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 2000000
             }
           },
           {
@@ -1979,8 +1910,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 1097000000
+              "status": "failed",
+              "duration": 15000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -1989,11 +1921,10 @@
             "line": 32,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 52000000
+              "status": "skipped"
             }
           },
           {
@@ -2005,8 +1936,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 29000000
+              "status": "skipped"
             }
           },
           {
@@ -2018,8 +1948,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1072000000
+              "status": "skipped"
             }
           },
           {
@@ -2031,8 +1960,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -2044,8 +1972,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 34000000
+              "status": "skipped"
             }
           },
           {
@@ -2057,8 +1984,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1045000000
+              "status": "skipped"
             }
           },
           {
@@ -2070,8 +1996,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1069000000
+              "status": "skipped"
             }
           },
           {
@@ -2083,8 +2008,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 26000000
+              "status": "skipped"
             }
           },
           {
@@ -2096,8 +2020,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1044000000
+              "status": "skipped"
             }
           },
           {
@@ -2109,8 +2032,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 24000000
+              "status": "skipped"
             }
           },
           {
@@ -2122,8 +2044,7 @@
               "location": "stepDefinations/generalStepDefinations.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 71000000
+              "status": "skipped"
             }
           },
           {
@@ -2135,8 +2056,7 @@
               "location": "stepDefinations/customerLogin.js:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 2072000000
+              "status": "skipped"
             }
           },
           {
@@ -2148,28 +2068,30 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:30"
+            },
+            "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 1000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
+              "location": "hooks/hooks.js:21"
             },
             "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "hooks/hooks.js:20"
-            },
-            "result": {
-              "status": "passed"
+              "status": "failed",
+              "duration": 20000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -2179,13 +2101,14 @@
               "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 52,
         "name": "Verify the deposit and withdrawl functionality of XYZ bank",
@@ -2216,7 +2139,8 @@
               "location": "hooks/hooks.js:16"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -2228,8 +2152,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 760000000
+              "status": "failed",
+              "duration": 13000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -2238,11 +2163,10 @@
             "line": 32,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 357000000
+              "status": "skipped"
             }
           },
           {
@@ -2254,8 +2178,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 24000000
+              "status": "skipped"
             }
           },
           {
@@ -2267,8 +2190,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1063000000
+              "status": "skipped"
             }
           },
           {
@@ -2280,8 +2202,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -2293,8 +2214,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 23000000
+              "status": "skipped"
             }
           },
           {
@@ -2306,8 +2226,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1028000000
+              "status": "skipped"
             }
           },
           {
@@ -2319,8 +2238,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1050000000
+              "status": "skipped"
             }
           },
           {
@@ -2332,8 +2250,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 25000000
+              "status": "skipped"
             }
           },
           {
@@ -2345,8 +2262,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1049000000
+              "status": "skipped"
             }
           },
           {
@@ -2358,8 +2274,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 32000000
+              "status": "skipped"
             }
           },
           {
@@ -2371,8 +2286,7 @@
               "location": "stepDefinations/generalStepDefinations.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 78000000
+              "status": "skipped"
             }
           },
           {
@@ -2384,8 +2298,7 @@
               "location": "stepDefinations/customerLogin.js:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 2069000000
+              "status": "skipped"
             }
           },
           {
@@ -2397,30 +2310,29 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 36000000
+              "status": "skipped"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
+              "location": "hooks/hooks.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:20"
+              "location": "hooks/hooks.js:21"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "failed",
+              "duration": 13000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -2430,13 +2342,14 @@
               "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 53,
         "name": "Verify the deposit and withdrawl functionality of XYZ bank",
@@ -2468,7 +2381,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 5000000
             }
           },
           {
@@ -2480,8 +2393,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 776000000
+              "status": "failed",
+              "duration": 11000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -2490,11 +2404,10 @@
             "line": 32,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 512000000
+              "status": "skipped"
             }
           },
           {
@@ -2506,8 +2419,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 33000000
+              "status": "skipped"
             }
           },
           {
@@ -2519,8 +2431,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1076000000
+              "status": "skipped"
             }
           },
           {
@@ -2532,8 +2443,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 13000000
+              "status": "skipped"
             }
           },
           {
@@ -2545,8 +2455,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 23000000
+              "status": "skipped"
             }
           },
           {
@@ -2558,8 +2467,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1039000000
+              "status": "skipped"
             }
           },
           {
@@ -2571,8 +2479,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1060000000
+              "status": "skipped"
             }
           },
           {
@@ -2584,8 +2491,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 27000000
+              "status": "skipped"
             }
           },
           {
@@ -2597,8 +2503,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1046000000
+              "status": "skipped"
             }
           },
           {
@@ -2610,8 +2515,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 27000000
+              "status": "skipped"
             }
           },
           {
@@ -2623,8 +2527,7 @@
               "location": "stepDefinations/generalStepDefinations.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 89000000
+              "status": "skipped"
             }
           },
           {
@@ -2636,8 +2539,7 @@
               "location": "stepDefinations/customerLogin.js:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 2066000000
+              "status": "skipped"
             }
           },
           {
@@ -2649,28 +2551,30 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:30"
+            },
+            "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 1000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
+              "location": "hooks/hooks.js:21"
             },
             "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "hooks/hooks.js:20"
-            },
-            "result": {
-              "status": "passed"
+              "status": "failed",
+              "duration": 25000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {
@@ -2686,7 +2590,7 @@
         ]
       },
       {
-        "id": "test-customer-login-part-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
+        "id": "test-customer-login,-logout,-deposit,-deposit-and-negative-scenario-of-xyz-bank;verify-the-deposit-and-withdrawl-functionality-of-xyz-bank",
         "keyword": "Scenario",
         "line": 54,
         "name": "Verify the deposit and withdrawl functionality of XYZ bank",
@@ -2717,7 +2621,8 @@
               "location": "hooks/hooks.js:16"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -2729,8 +2634,9 @@
               "location": "stepDefinations/generalTest.js:6"
             },
             "result": {
-              "status": "passed",
-              "duration": 1030000000
+              "status": "failed",
+              "duration": 9000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
             }
           },
           {
@@ -2739,11 +2645,10 @@
             "line": 32,
             "name": "Verify user is on XYZ bank application",
             "match": {
-              "location": "stepDefinations/generalTest.js:12"
+              "location": "stepDefinations/generalTest.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 93000000
+              "status": "skipped"
             }
           },
           {
@@ -2755,8 +2660,7 @@
               "location": "stepDefinations/generalStepDefinations.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 25000000
+              "status": "skipped"
             }
           },
           {
@@ -2768,8 +2672,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1061000000
+              "status": "skipped"
             }
           },
           {
@@ -2781,8 +2684,7 @@
               "location": "stepDefinations/generalStepDefinations.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 12000000
+              "status": "skipped"
             }
           },
           {
@@ -2794,8 +2696,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 22000000
+              "status": "skipped"
             }
           },
           {
@@ -2807,8 +2708,7 @@
               "location": "stepDefinations/customerLogin.js:4"
             },
             "result": {
-              "status": "passed",
-              "duration": 1031000000
+              "status": "skipped"
             }
           },
           {
@@ -2820,8 +2720,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1048000000
+              "status": "skipped"
             }
           },
           {
@@ -2833,8 +2732,7 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
-              "status": "passed",
-              "duration": 27000000
+              "status": "skipped"
             }
           },
           {
@@ -2846,8 +2744,7 @@
               "location": "stepDefinations/generalStepDefinations.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1043000000
+              "status": "skipped"
             }
           },
           {
@@ -2859,8 +2756,7 @@
               "location": "stepDefinations/generalStepDefinations.js:30"
             },
             "result": {
-              "status": "passed",
-              "duration": 42000000
+              "status": "skipped"
             }
           },
           {
@@ -2872,8 +2768,7 @@
               "location": "stepDefinations/generalStepDefinations.js:40"
             },
             "result": {
-              "status": "passed",
-              "duration": 112000000
+              "status": "skipped"
             }
           },
           {
@@ -2885,8 +2780,7 @@
               "location": "stepDefinations/customerLogin.js:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 2081000000
+              "status": "skipped"
             }
           },
           {
@@ -2898,28 +2792,30 @@
               "location": "stepDefinations/generalStepDefinations.js:35"
             },
             "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:30"
+            },
+            "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 1000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/hooks.js:29"
+              "location": "hooks/hooks.js:21"
             },
             "result": {
-              "status": "passed"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "hooks/hooks.js:20"
-            },
-            "result": {
-              "status": "passed"
+              "status": "failed",
+              "duration": 22000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
             }
           },
           {

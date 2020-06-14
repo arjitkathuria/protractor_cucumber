@@ -1,8 +1,8 @@
-const { BeforeAll, After, AfterAll, Before } = require("cucumber");
+const { BeforeAll, After, setDefaultTimeout, Before } = require("cucumber");
 let fs = require("fs");
 let propertyMap = {};
 
-BeforeAll({ timeout: 30 * 1000 }, async function () {
+BeforeAll({ timeout: 60 * 1000 }, async function () {
     let propertyContent = fs.readFileSync(".//propertiesFile//prop.properties");
     let fullPropContent = propertyContent.toString();
     let propPairs = fullPropContent.split("\n");
@@ -13,7 +13,8 @@ BeforeAll({ timeout: 30 * 1000 }, async function () {
     return await propertyMap;
 });
 
-Before(function (scenario) {
+Before( function (scenario) {
+    setDefaultTimeout(60 * 1000);//apply for all the scenarios
     browser.logger.info("******** Execution of Scenario '" + scenario.pickle.name + "' has been started.********");
 });
 

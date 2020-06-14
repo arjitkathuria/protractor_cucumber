@@ -1,0 +1,243 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Test general scenarios of XYZ bank",
+    "line": 2,
+    "id": "test-general-scenarios-of-xyz-bank",
+    "tags": [
+      {
+        "name": "@generalScenario",
+        "line": 1
+      },
+      {
+        "name": "@functionalTestCase",
+        "line": 1
+      }
+    ],
+    "uri": "features/generalTest.feature",
+    "elements": [
+      {
+        "id": "test-general-scenarios-of-xyz-bank;verify-the-text-of-home-page-of-xyz-bank",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify the text of home page of XYZ bank",
+        "tags": [
+          {
+            "name": "@generalScenario",
+            "line": 1
+          },
+          {
+            "name": "@functionalTestCase",
+            "line": 1
+          },
+          {
+            "name": "@textOfBankTestCase",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:16"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User opens the XYZ bank application",
+            "match": {
+              "location": "stepDefinations/generalTest.js:6"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 10000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalTest.js:8:6)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verify user is on XYZ bank application",
+            "match": {
+              "location": "stepDefinations/generalTest.js:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Verify 'text on home' page",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:30"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 35000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "test-general-scenarios-of-xyz-bank;verify-the-click-functionality-of-home-button",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Verify the click functionality of home button",
+        "tags": [
+          {
+            "name": "@generalScenario",
+            "line": 1
+          },
+          {
+            "name": "@functionalTestCase",
+            "line": 1
+          },
+          {
+            "name": "@homeButtonTestCase",
+            "line": 10
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Check the text of 'Home' button",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 19000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)Error\n    at ElementArrayFinder.applyAction_ (/usr/local/lib/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.<computed> [as getText] (/usr/local/lib/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.<computed> [as getText] (/usr/local/lib/node_modules/protractor/built/element.js:831:22)\n    at commonFunction.textOnElement (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/utility/commonFunctions.js:15:58)\n    at World.<anonymous> (/Users/arjitkathuria/Desktop/NAGP/Protractor/ProtractorAssignment/stepDefinations/generalStepDefinations.js:17:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "Click on 'Home' button",
+            "match": {
+              "location": "stepDefinations/generalStepDefinations.js:20"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Verify user is on XYZ bank application",
+            "match": {
+              "location": "stepDefinations/generalTest.js:13"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "hooks/hooks.js:21"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 61000000,
+              "error_message": "NoSuchWindowError: no such window: window was already closed\n  (Session info: chrome=83.0.4103.97)\n  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Mac OS X 10.14.6 x86_64)\n    at Object.checkLegacyResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "83.0.4103.97"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]
