@@ -4,6 +4,11 @@ const {
     zip
 } = require('zip-a-folder');
 
+/***
+ *Function Use: Create a zip folder of report/index.html with current time stamp
+ */
+
+
 var util = function () {
     this.zip = async function (source) {
         var destination = await source + '.zip'
@@ -87,9 +92,9 @@ var util = function () {
             if (await fs.existsSync(path)) {
                 await fs.readdirSync(path).forEach(async function (file, index) {
                     var curPath = path + "/" + file;
-                    if (await fs.lstatSync(curPath).isDirectory()) { 
+                    if (await fs.lstatSync(curPath).isDirectory()) {
                         await deleteFolder(curPath);
-                    } else { 
+                    } else {
                         await fs.unlinkSync(curPath);
                     }
                 });
@@ -104,8 +109,8 @@ var util = function () {
     this.createReportFolder = async function () {
         try {
             var currentDateTime = await this.getCurrentDateTime();
-            var dateFormat = await currentDateTime.replaceAll(" ", "_"); 
-            var dateFormatModify = await dateFormat.replaceAll(":", "_"); 
+            var dateFormat = await currentDateTime.replaceAll(" ", "_");
+            var dateFormatModify = await dateFormat.replaceAll(":", "_");
             dateFormatModify = await dateFormatModify.replaceAll("-", "_");
             var arcFolder = "./reports/";
             await this.createFolder(arcFolder);
@@ -126,5 +131,3 @@ var util = function () {
 };
 
 module.exports = new util();
-
-

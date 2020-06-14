@@ -41,4 +41,3 @@ Then('Set the {string} text under {string}', async function (value, string) {
     const elementName = await toCamelCase(string);
     await commonFunctions.setText(object.Locators[elementName], value );
 });
-

@@ -5,6 +5,8 @@ let commonFunctions = require('../utility/commonFunctions.js');
  */
 let generalTestPage = function(){
 
+ //------------------------------Verify home page URL and Title ----------------------------------
+
     this.userOnPage = async function(){
         await commonFunctions.verifyURL(testData.homePageUrl);
         await commonFunctions.verifyTitle(testData.homePageTitle);

@@ -4,6 +4,8 @@
  * @param text
  * @returns {}
  */
+
+  //------------------------------conver the element name into camle casing ----------------------------------
 const toCamelCase = (text) => {
     return toCapitalizedCamelCase(text)
         .replace(/^(.)/, function($1) {
@@ -21,6 +23,8 @@ const toCapitalizedCamelCase = (text) => {
             return $1.toUpperCase();
         });
 };
+
+ //-------------Merge multiple object repository json file to get data in commonFunction.js----------------
 
 const realMerge = function (to, from) {
 

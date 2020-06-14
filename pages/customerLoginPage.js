@@ -7,11 +7,15 @@ const { toCamelCase } = require("../utility/string.js");
  */
 let customerLoginPage = function(){
 
+//------------------------------Select drop down from the list----------------------------------
+
     this.selectFromDropdown = async function(string){
         browser.logger.info("Selecting " + string + "option from the dropdown");
         await element(by.cssContainingText('option', string)).click();
         return browser.sleep(propertyMap["smallWait"]);
     };
+
+ //------------------------------Click on element from bankManagerLoginOR.json ------------------
 
     this.clickOn = async function(string){
         const elementName = await toCamelCase(string);

@@ -8,6 +8,8 @@
 
 tags: "@loginLogoutTestCase"
 
+* Added capability for parallel execution in chrome and safari 
+
 Also created different scripts under package.json for all type of test cases.
 
 * Almost each and every step defination is generic so it can used for multiple scenario.
@@ -22,9 +24,11 @@ Everything has been controlled only through commonFunctions.js
 
 * Created seperate property file to read the general information of the test like URL of the application.
 
-* Used proper coding practice, Like using of let and camel casing
+* Used proper coding practice, Like using of let and camel casing.
 
-* Added Negative scenario for withdrawing more money than balance
+* Added Negative scenario for withdrawing more money than balance for a customer.
+
+* Used multiple cucumber html reporting fwhich support parallel execution of browser in a single report.
 
 **What all dependencies used for this task?**
 -----
@@ -37,6 +41,8 @@ Everything has been controlled only through commonFunctions.js
  * protractor-multiple-cucumber-html-reporter-plugin
  * Gherkin
  * Java Script
+ * node-datetime
+ * zip-a-folder
  
 
 **What all I have included in this project?**
@@ -84,6 +90,10 @@ npm run all: to execute all of the test
 npm run bankManagerLogin: to execute all of the test related to bank manager login
 npm run customerLogin: to execute all of the test related to customer login
 npm run generalScenario: to execute all of the general test
+npm run negative: to run negative scenario
 
 ** Can run through cmd or any editor like visual studio **
 
+# Git hub Repo Link:-
+* Git clone https://github.com/arjitkathuria/protractor_cucumber.git
+`https://github.com/arjitkathuria/protractor_cucumber.git`
