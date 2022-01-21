@@ -25,7 +25,7 @@
     "protractor-multiple-cucumber-html-reporter-plugin": "^1.8.1"
   },
   "dependencies": {
-    "log4js": "^6.3.0",
+    "log4js": "^6.4.0",
     "node-datetime": "^2.1.2",
     "zip-a-folder": "0.0.12"
   }
